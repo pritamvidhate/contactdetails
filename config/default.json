@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://pritam999:pritam999@contact.nntin.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://pritam999:pritam999@contact.nntin.mongodb.net/contactDetials?retryWrites=true&w=majority",
+    "jwtSecret": "secret"
 }
