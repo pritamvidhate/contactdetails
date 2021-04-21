@@ -2,7 +2,7 @@ import React, {Fragment, useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import {Link} from 'react-router-dom';
 import AuthContext from '../../context/auth/authContext';
-import ContactContext from '../../context/contact/ContactContext';
+import ContactContext from '../../context/contact/contactContext';
 
 const Navbar = ({title, icon}) => {
     const authContext = useContext(AuthContext);
@@ -19,7 +19,7 @@ const Navbar = ({title, icon}) => {
     const onLogout = () =>{
         logout();
         clearContacts();
-    }
+    };
 
     const authLinks = (
     <Fragment>

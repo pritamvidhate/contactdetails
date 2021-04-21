@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import ContactState from './context/contact/contactState';
+import ContactState from './context/contact/ContactState';
 import AuthState from './context/auth/AuthState';
 import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
@@ -42,6 +42,6 @@ const App = () => {
       </ContactState>
     </AuthState>
   );
-}
+};
 
 export default App;

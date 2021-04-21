@@ -2,7 +2,7 @@ import React,{Fragment, useContext, useEffect} from 'react'
 import ContactItem from './ContactItem';
 import { TransitionGroup } from 'react-transition-group';
 
-import ContactContext from '../../context/contact/ContactContext';
+import ContactContext from '../../context/contact/contactContext';
 import Spinner from '../layout/Spinner';
 
 const Contacts = () => {

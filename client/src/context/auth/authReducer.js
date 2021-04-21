@@ -5,7 +5,8 @@ import {
     AUTH_ERROR, 
     LOGIN_FAIL,
     LOGOUT,
-    CLEAR_ERRORS
+    CLEAR_ERRORS,
+    LOGIN_SUCCESS
 } from '../types';
 
 export default (state, action) =>{
@@ -18,7 +19,8 @@ export default (state, action) =>{
                 user : action.payload
             }
         case REGISTER_SUCCESS: 
-            localStorage.setItem('item', action.payload.token);
+        case LOGIN_SUCCESS:   
+            localStorage.setItem('token', action.payload.token);
             return{
                 ...state,
                 ...action.payload,
@@ -46,4 +48,4 @@ export default (state, action) =>{
         default: 
             return state;    
     }
-}
+};

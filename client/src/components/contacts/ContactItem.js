@@ -1,6 +1,6 @@
 import React,{useContext} from 'react';
 import PropTypes from 'prop-types';
-import ContactContext from '../../context/contact/ContactContext';
+import ContactContext from '../../context/contact/contactContext';
 
 const ContactItem = ({contact}) => {
     const contactContext = useContext(ContactContext);  
@@ -11,11 +11,11 @@ const ContactItem = ({contact}) => {
     const onDelete = () =>{
         deleteContact(_id);
         clearCurrent();
-    }
+    };
 
     return (
         <div className = "card bg-light">
-        <h3 className="text-primary text-left">
+            <h3 className="text-primary text-left">
             {name}{' '} 
             <span
                 style={{float: 'right'}}

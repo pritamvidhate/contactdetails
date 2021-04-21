@@ -52,12 +52,12 @@ const Login = (props) => {
 
             <div className="form-group">
                 <label htmlFor="email">Email Address</label>
-                <input type="eamil" name="email" value={email} onChange={onChange} required/>
+                <input id="email" type="eamil" name="email" value={email} onChange={onChange} required/>
             </div>
 
             <div className="form-group">
                 <label htmlFor="password">Password</label>
-                <input type="password" value={password} onChange={onChange} required/>
+                <input id="password" type="password" name="password" value={password} onChange={onChange} required/>
             </div>
 
             <input 
@@ -66,7 +66,7 @@ const Login = (props) => {
                 className="btn btn-primary btn-block"/>
         </form>
         </div>
-    )
-}
+    );
+};
 
 export default Login;

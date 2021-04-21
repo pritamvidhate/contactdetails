@@ -28,7 +28,7 @@ export default (state, action) =>{
         case UPDATE_CONTACT:
             return{
                 ...state,
-                contacts: state.contact.map(contact =>
+                contacts: state.contacts.map(contact =>
                     contact._id === action.payload._id ? action.payload: contact
                     ),
                 loading: false
@@ -48,7 +48,7 @@ export default (state, action) =>{
                 filtered: null,
                 error: null,
                 current: null
-            }
+            };
         case SET_CURRENT:
             return {
                 ...state,
