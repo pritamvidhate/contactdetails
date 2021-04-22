@@ -9,17 +9,13 @@ connectDB();
 //Middleware
 app.use(express.json({extended:false}));
 
-// app.get('/',(req, res) =>{
-//     res.json({msg: 'welcome to the contacts_info API...'})
-// })  
-
 //Defines Routes
     app.use('/api/users', require('./routes/users'));
     app.use('/api/auth', require('./routes/auth'));
     app.use('/api/contacts', require('./routes/contacts'));
 
     // Serve static assets in production
-    if (process.env.NODE_ENV === 'default') {
+    if (process.env.NODE_ENV === 'production') {
     
     // Set static folder
         app.use(express.static('client/build'));
@@ -31,4 +27,4 @@ app.use(express.json({extended:false}));
 
 const PORT =process.env.PORT || 5000;
 
-app.listen(PORT, () => console.log(`server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`server running on port ${PORT}`)); 

@@ -1,0 +1,4 @@
+{
+    "mongoURI":"mongodb+srv://pritam999:pritam999@contact.nntin.mongodb.net/contactinfo?retryWrites=true&w=majority",
+    "jwtSecret":"secret"
+}

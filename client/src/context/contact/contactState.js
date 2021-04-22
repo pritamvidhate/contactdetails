@@ -92,7 +92,8 @@ const ContactState = props =>{
         };
 
         try {
-            const res = await axios.put(`/api/contacts/${contact._id}`, contact, config);
+            const res = await axios.put(`/api/contacts/${contact._id}`, 
+            contact, config);
 
             dispatch({
                 type: UPDATE_CONTACT, 
@@ -136,7 +137,7 @@ const ContactState = props =>{
         <ContactContext.Provider
         value={{
             contacts: state.contacts,
-            current : state.current,
+            current: state.current,
             filtered: state.filtered,
             error: state.error,
             addContact,
